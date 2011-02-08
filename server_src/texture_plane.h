@@ -13,7 +13,7 @@
 #ifndef TEXTURE_PLANE_H
 #define TEXTURE_PLANE_H
 
-#include  "vrpn_Configure.h"
+#include <vrpn_Configure.h>
 #include  "vrpn_ForceDevice.h"
 #ifdef	VRPN_USE_PHANTOM_SERVER
 

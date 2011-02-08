@@ -1,6 +1,6 @@
 #ifndef VRPN_RUMBLEPAD_H
 
-#include "vrpn_Configure.h"
+#include <vrpn_Configure.h>
 #if defined(_WIN32) && defined(VRPN_USE_DIRECTINPUT)
 
 #include "vrpn_Connection.h"

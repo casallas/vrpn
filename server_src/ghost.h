@@ -1,7 +1,7 @@
 #ifndef	vrpn_GHOST_H
 #define	vrpn_GHOST_H
 
-#include  "vrpn_Configure.h"
+#include <vrpn_Configure.h>
 #ifdef	VRPN_USE_PHANTOM_SERVER
 
 #include <math.h>

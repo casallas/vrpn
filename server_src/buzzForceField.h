@@ -1,7 +1,7 @@
 #ifndef BUZZFORCEFIELD_H
 #define BUZZFORCEFIELD_H
 
-#include  "vrpn_Configure.h"
+#include <vrpn_Configure.h>
 #include  "vrpn_ForceDevice.h"
 #ifdef	VRPN_USE_PHANTOM_SERVER
 

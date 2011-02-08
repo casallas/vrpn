@@ -14,7 +14,7 @@
 #include <windows.h>
 #endif
 
-#include  "vrpn_Configure.h"
+#include <vrpn_Configure.h>
 #include "ghost.h"
 
 class Plane:public vrpn_HapticSurface

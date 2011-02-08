@@ -8,7 +8,7 @@
 #ifndef VRPN_HUMANINTERFACE_H
 #define VRPN_HUMANINTERFACE_H
 
-#include "vrpn_Configure.h"
+#include <vrpn_Configure.h>
 #include "vrpn_BaseClass.h"
 #include <string.h>
 #include <wchar.h>

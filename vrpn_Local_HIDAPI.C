@@ -1,4 +1,4 @@
-#include "vrpn_Configure.h"
+#include <vrpn_Configure.h>
 #ifdef  VRPN_USE_HID
 #ifdef  VRPN_USE_LOCAL_HIDAPI
 	

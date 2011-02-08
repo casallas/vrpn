@@ -1,7 +1,7 @@
 #ifndef VRPN_PHANTOM_H
 #define VRPN_PHANTOM_H
 
-#include  "vrpn_Configure.h"
+#include <vrpn_Configure.h>
 #ifdef	VRPN_USE_PHANTOM_SERVER
 
 // Hide the include files which use the old version of iostreams

@@ -5,7 +5,7 @@
 #ifndef TRIMESH_H
 #define TRIMESH_H
 
-#include  "vrpn_Configure.h"
+#include <vrpn_Configure.h>
 #ifdef	VRPN_USE_PHANTOM_SERVER
 
 #include "ghost.h"

@@ -8,7 +8,7 @@
 #ifndef VRPN_TRACKER_SPACEPOINT_H_
 #define VRPN_TRACKER_SPACEPOINT_H_
 
-#include "vrpn_Configure.h"
+#include <vrpn_Configure.h>
 #include "vrpn_HumanInterface.h"
 #include "vrpn_Tracker.h"
 #include "vrpn_Button.h"

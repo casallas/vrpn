@@ -41,7 +41,7 @@ typedef union {
 
 #include <math.h>
 #include <stdio.h>
-#include "vrpn_Configure.h"
+#include <vrpn_Configure.h>
 #include "vrpn_ForceDevice.h"
 
 #ifdef	VRPN_USE_PHANTOM_SERVER

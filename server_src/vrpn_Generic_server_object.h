@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <fcntl.h>
 
-#include "vrpn_Configure.h"
+#include <vrpn_Configure.h>
 #ifdef	sgi
 #define	SGI_BDBOX
 #endif

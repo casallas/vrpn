@@ -10,7 +10,7 @@
 // only the basic Plane has been implemented within HDAPI, rather than the
 // texturePlane.  This should be changeable in the future.
 
-#include  "vrpn_Configure.h"
+#include <vrpn_Configure.h>
 #ifdef	VRPN_USE_PHANTOM_SERVER
 #include <math.h>
 #include <stdlib.h>

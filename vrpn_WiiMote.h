@@ -6,7 +6,7 @@
 #ifndef VRPN_WIIMOTE_H
 #define VRPN_WIIMOTE_H
 
-#include "vrpn_Configure.h"
+#include <vrpn_Configure.h>
 #if defined(VRPN_USE_WIIUSE)
 
 #include "vrpn_Shared.h"
