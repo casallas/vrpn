@@ -370,6 +370,13 @@ if(WIN32)
 	if(VRPN_USE_DIRECTINPUT)
 		include_directories(${DIRECTINPUT_INCLUDE_DIRS})
 		list(APPEND SERVER_EXTRA_LIBS ${DIRECTINPUT_LIBRARIES})
+		find_path(DIRECTINPUT_XINPUT_INCLUDE_DIR xinput.h HINTS ${DIRECTINPUT_INCLUDE_DIRS})
+		mark_as_advanced(DIRECTINPUT_XINPUT_INCLUDE_DIR)
+		if(DIRECTINPUT_XINPUT_INCLUDE_DIR)
+			set(VRPN_USE_WINDOWS_XINPUT TRUE)
+		else()
+			set(VRPN_USE_WINDOWS_XINPUT FALSE)
+		endif()
 	endif()
 endif()
 
@@ -391,9 +398,10 @@ endif()
 ###
 # NIDAQMX
 ###
-find_package(NIDAQMX)
+find_package(NIDAQmx)
 option_requires(VRPN_USE_NATIONAL_INSTRUMENTS_MX
 	"Build with National Instruments NIDAQMX support"
+	${DEFAULT_OFF_IF_SUBPROJECT}
 	NIDAQMX_FOUND)
 
 if(NIDAQMX_FOUND)
