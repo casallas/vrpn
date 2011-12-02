@@ -171,6 +171,7 @@ int main(int argc, char **argv) {
     printf("usage: \n");
     printf("  %s Tracker0@host\n", argv[0]);
 
+    delete tposquat;
     return -1;
   }
   server = argv[1];

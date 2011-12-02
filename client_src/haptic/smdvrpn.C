@@ -248,6 +248,7 @@ int main(int argc, char **argv) {
   void * myglwin = glwin_create(700, 700);
   if (myglwin == NULL) {
     printf("Failed to open OpenGL window!!\n");
+    delete phan_offset, atom_state;
     return -1;
   }
   atom_state->x = 0.0; atom_state->y = 0.0; atom_state->z = 0.0;
