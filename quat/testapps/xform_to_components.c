@@ -49,43 +49,52 @@ int main(int argc, char *argv[])
   /* Print the comment line. */
   if (fgets(line, 1024, infile) == NULL) {
     fprintf(stderr, "Could not read comment line from %s\n", infile_name);
+    fclose(infile);
     return -3;
   }
   printf("Comment: %s\n", line);
   /* Read and parse the first matrix line. */
   if (fgets(line, 1024, infile) == NULL) {
     fprintf(stderr, "Could not read matrix line 1 from %s\n", infile_name);
+    fclose(infile);
     return -3;
   }
   if (sscanf(line, "%lf%lf%lf%lf", &row_matrix[0][0], &row_matrix[1][0], &row_matrix[2][0], &row_matrix[3][0]) != 4) {
     fprintf(stderr, "Could not parse matrix line 1 from %s\n", infile_name);
+    fclose(infile);
     return -3;
   }
   /* Read and parse the second matrix line. */
   if (fgets(line, 1024, infile) == NULL) {
     fprintf(stderr, "Could not read matrix line 2 from %s\n", infile_name);
+    fclose(infile);
     return -3;
   }
   if (sscanf(line, "%lf%lf%lf%lf", &row_matrix[0][1], &row_matrix[1][1], &row_matrix[2][1], &row_matrix[3][1]) != 4) {
     fprintf(stderr, "Could not parse matrix line 2 from %s\n", infile_name);
+    fclose(infile);
     return -3;
   }
   /* Read and parse the third matrix line. */
   if (fgets(line, 1024, infile) == NULL) {
     fprintf(stderr, "Could not read matrix line 3 from %s\n", infile_name);
+    fclose(infile);
     return -3;
   }
   if (sscanf(line, "%lf%lf%lf%lf", &row_matrix[0][2], &row_matrix[1][2], &row_matrix[2][2], &row_matrix[3][2]) != 4) {
     fprintf(stderr, "Could not parse matrix line 3 from %s\n", infile_name);
+    fclose(infile);
     return -3;
   }
   /* Read and parse the fourth matrix line. */
   if (fgets(line, 1024, infile) == NULL) {
     fprintf(stderr, "Could not read matrix line 4 from %s\n", infile_name);
+    fclose(infile);
     return -3;
   }
   if (sscanf(line, "%lf%lf%lf%lf", &row_matrix[0][3], &row_matrix[1][3], &row_matrix[2][3], &row_matrix[3][3]) != 4) {
     fprintf(stderr, "Could not parse matrix line 4 from %s\n", infile_name);
+    fclose(infile);
     return -3;
   }
 
